@@ -1,0 +1,15 @@
+BoxLayout:
+    orientation: 'vertical'
+    
+    Label:
+        text: 'Aplikacja Giełdowa'
+    
+    TextInput:
+        hint_text: 'Wprowadź nazwę akcji'
+    
+    Button:
+        text: 'Pobierz Notowania'
+        on_press: root.fetch_stock_data()
+    
+    Label:
+        id: stock_data_label
